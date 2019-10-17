@@ -1,0 +1,121 @@
+@media only screen and (min-width: 375px) and (max-width: 1439px){
+    @viewport{
+        width: 375px;
+    }
+    body > div {
+        margin: 100px 30px;
+    }
+    .first {
+        float: none;
+    }
+    .second {
+        float: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    }
+@media only screen and (min-width: 1440px) {
+    @viewport {
+        width: 1440px;
+    }
+    body > div {
+        margin: 300px;
+    }
+    .main-container {
+        width: 680px;
+        height: 70%;
+        /*set container in the center of the screen*/
+        position: fixed;
+        left: 120px;
+        top: -30%;
+       
+    }
+    #bottom {
+        height: 54%;
+    }
+    .first {
+        float: left;
+        width: 300px;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+    }
+    .second {
+        float: right;
+        width: 300px;
+        height: 100%;
+        border-bottom-right-radius: 10px;
+    }
+}
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 150%;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h4 {
+    display: inline-block;
+    font-size: 120%;
+    font-weight: 700;
+    margin: 0;
+}
+.main-container {
+   
+    border-radius: 10px;
+    -webkit-box-shadow: -1px -4px 18px -4px rgba(171,158,171,1);
+    -moz-box-shadow: -1px -4px 18px -4px rgba(171,158,171,1);
+    box-shadow: -1px -4px 18px -4px rgba(171,158,171,1);    
+}
+
+.inner {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 40px;
+    background-color: white;
+    font-weight: 700;
+    color: hsl(218, 22%, 67%);
+    height: 30%;
+ 
+}
+
+.inner > p{
+    line-height: 150%;
+    padding-right: 100px;
+    margin:0;
+}
+#guarantee {
+    color: hsl(71, 73%, 54%);
+    padding: 20px 0px;
+    margin: 0;
+}
+
+#bottom{
+    color: white;
+    
+}
+#bottom  h4{
+    padding-top: 40px;
+    margin:0;
+}
+.first {
+    background-color: hsl(179, 62%, 43%);
+    padding-left: 40px;
+    text-align: left;
+    margin: 0;
+    resize:none;
+
+}
+.second {
+    background-color: hsl(179, 62%, 48%);
+    padding-left: 40px;
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+    resize: none;
+}
