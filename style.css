@@ -87,12 +87,13 @@ h6 {
 
 body {
 	font-family: "Karla", sans-serif;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: var(--fw-regular);
 	background-color: var(--neutral-light-gray);
 	color: var(--neutral-light-gray);
 	margin: 1.5rem;
 	min-height: 100vh;
+	overflow-y: hidden;
 }
 
 /* Button */
@@ -112,12 +113,12 @@ body {
 .subscription {
 	background-color: white;
 	border-radius: 0.5rem;
-	max-width: 40vw;
+	max-width: 50vw;
 	overflow: hidden;
 }
 
 section {
-	padding: 2rem;
+	padding: 3rem;
 }
 
 .subscription__join {
@@ -127,11 +128,14 @@ section {
 .sibscription__guarantee {
 	margin: 1rem 0;
 	color: var(--primary-bright-yellow);
+	font-size: 1.125rem;
 }
 
 .subscription__cta {
 	color: var(--primary-cyan);
 	font-weight: var(--fw-bold);
+	font-size: 1.5rem;
+	letter-spacing: 1px;
 }
 
 .subscription__title {
