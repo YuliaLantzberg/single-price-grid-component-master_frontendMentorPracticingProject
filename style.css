@@ -144,7 +144,7 @@ section {
 }
 
 .subscription__package {
-	color: var(--neutral-light-gray);
+	color: white;
 	background-color: var(--primary-cyan);
 	display: grid;
 }
@@ -158,7 +158,6 @@ section {
 }
 
 #price {
-	color: white;
 	font-size: 2rem;
 	line-height: 1;
 }
