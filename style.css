@@ -1,121 +1,185 @@
-@media only screen and (min-width: 375px) and (max-width: 1439px){
-    @viewport{
-        width: 375px;
-    }
-    body > div {
-        margin: 100px 30px;
-    }
-    .first {
-        float: none;
-    }
-    .second {
-        float: none;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    }
-@media only screen and (min-width: 1440px) {
-    @viewport {
-        width: 1440px;
-    }
-    body > div {
-        margin: 300px;
-    }
-    .main-container {
-        width: 680px;
-        height: 70%;
-        /*set container in the center of the screen*/
-        position: fixed;
-        left: 120px;
-        top: -30%;
-       
-    }
-    #bottom {
-        height: 54%;
-    }
-    .first {
-        float: left;
-        width: 300px;
-        height: 100%;
-        border-bottom-left-radius: 10px;
-    }
-    .second {
-        float: right;
-        width: 300px;
-        height: 100%;
-        border-bottom-right-radius: 10px;
-    }
+/* Variables */
+:root {
+	--primary-cyan: hsl(179, 62%, 43%);
+	--primary-light-cyan: hsl(176, 55%, 48%);
+	--primary-dark-cyan: hsl(176, 55%, 35%);
+	--primary-bright-yellow: hsl(71, 73%, 54%);
+
+	--neutral-light-gray: hsl(204, 43%, 93%);
+	--neutral-light-gray-500: hsl(204, 43%, 90%);
+	--neutral-grayish-blue: hsl(218, 22%, 67%);
+
+	--fw-regular: 400;
+	--fw-bold: 700;
 }
+
+/* CSS Reset */
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+	margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
 body {
-    background-color: hsl(204, 43%, 93%);
-    font-size: 16px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
 }
 
-h3 {
-    font-size: 150%;
-    color: hsl(179, 62%, 43%);
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin: 0;
+/* Utilizies */
+.grid-center {
+	display: grid;
+	place-items: center;
 }
 
-h4 {
-    display: inline-block;
-    font-size: 120%;
-    font-weight: 700;
-    margin: 0;
-}
-.main-container {
-   
-    border-radius: 10px;
-    -webkit-box-shadow: -1px -4px 18px -4px rgba(171,158,171,1);
-    -moz-box-shadow: -1px -4px 18px -4px rgba(171,158,171,1);
-    box-shadow: -1px -4px 18px -4px rgba(171,158,171,1);    
+/* General styling */
+
+body {
+	font-family: "Karla", sans-serif;
+	font-size: 0.8rem;
+	font-weight: var(--fw-regular);
+	background-color: var(--neutral-light-gray);
+	color: var(--neutral-light-gray);
+	margin: 1.5rem;
+	min-height: 100vh;
 }
 
-.inner {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 40px;
-    background-color: white;
-    font-weight: 700;
-    color: hsl(218, 22%, 67%);
-    height: 30%;
- 
+/* Button */
+
+.btn {
+	background-color: var(--primary-bright-yellow);
+	color: white;
+	border: 0;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	padding: 0.7rem 1.5rem;
+	box-shadow: 0rem 0.5rem 1rem var(--primary-dark-cyan);
 }
 
-.inner > p{
-    line-height: 150%;
-    padding-right: 100px;
-    margin:0;
-}
-#guarantee {
-    color: hsl(71, 73%, 54%);
-    padding: 20px 0px;
-    margin: 0;
+/* Subscription styles */
+
+.subscription {
+	background-color: white;
+	border-radius: 0.5rem;
+	max-width: 40vw;
+	overflow: hidden;
 }
 
-#bottom{
-    color: white;
-    
+section {
+	padding: 2rem;
 }
-#bottom  h4{
-    padding-top: 40px;
-    margin:0;
-}
-.first {
-    background-color: hsl(179, 62%, 43%);
-    padding-left: 40px;
-    text-align: left;
-    margin: 0;
-    resize:none;
 
+.subscription__join {
+	color: var(--neutral-grayish-blue);
 }
-.second {
-    background-color: hsl(179, 62%, 48%);
-    padding-left: 40px;
-    text-align: left;
-    font-weight: 400;
-    margin: 0;
-    resize: none;
+
+.sibscription__guarantee {
+	margin: 1rem 0;
+	color: var(--primary-bright-yellow);
+}
+
+.subscription__cta {
+	color: var(--primary-cyan);
+	font-weight: var(--fw-bold);
+}
+
+.subscription__title {
+	color: white;
+	font-weight: var(--fw-regular);
+	margin-bottom: 1rem;
+}
+
+.subscription__package {
+	color: var(--neutral-light-gray);
+	background-color: var(--primary-cyan);
+	display: grid;
+}
+
+.subscription__price {
+	display: flex;
+	align-items: flex-end;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	color: var(--neutral-light-gray-500);
+}
+
+#price {
+	color: white;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.subscription__price-description {
+	margin-bottom: 2rem;
+}
+
+.subscription__motivation {
+	background-color: var(--primary-light-cyan);
+}
+
+.motivation__list {
+	list-style: none;
+	margin-left: -2.5rem;
+	color: var(--neutral-light-gray-500);
+}
+
+@media (min-width: 768px) {
+	.subscription {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.subscription__join {
+		grid-column: 1 / span 2;
+	}
 }

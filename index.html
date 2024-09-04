@@ -5,33 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla" />
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Frontend Mentor | Single Price Grid Component</title>
 
 
 </head>
-<body>
-   <div class="main-container">
-            <section class="inner">
-                <h3>Join our community</h3>
-                <h4 id="guarantee">30-day, hassle-free money back guarantee </h4>
-          
+<body class="grid-center">
+    <main class="grid-center">
+        <div class="subscription">
+            <section class="subscription__join">
+                <h2 class="subscription__cta">Join our community</h2>
+                <h4 class="sibscription__guarantee">30-day, hassle-free money back guarantee </h4>        
                 <p>Gain access to our full library of tutorials along with expert code reviews.
                 Perfect for any developers who are serious about honing their skills.</p>
             </section>
-        <div id="bottom">
-            <section class="first">
-                <h4>Monthly Subscription</h4>
-                <p><b>$29</b> per month</p>
-                <p>Full access for less than $1 a day</p>
-                <button>Sign Up</button>
+            <section class="subscription__package">
+                <h3 class="subscription__title">Monthly Subscription</h3>
+                <p class="subscription__price"><b id="price">$29</b>per month</p>
+                <p class="subscription__price-description">Full access for less than $1 a day</p>
+                <button class="btn">Sign Up</button>
             </section>
-            <section class="second">
-                <h4>Why Us</h4>
-
-                <ul style="list-style-type:none;">
+            <section class="subscription__motivation">
+                <h3 class="subscription__title">Why Us</h3>
+                <ul class="motivation__list">
                     <li>Tutorials by industry exports</li>
                     <li>Peer &Aacute; expert code review</li>
                     <li>Coding exercises</li>
@@ -40,11 +38,9 @@
                     <li>Fleshcard decks</li>
                     <li>New videos every week</li>
                 </ul>
-
             </section>
         </div>
     </div>
-
-
+    </main>
 </body>
 </html>
