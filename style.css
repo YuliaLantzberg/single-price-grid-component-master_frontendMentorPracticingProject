@@ -125,7 +125,7 @@ section {
 }
 
 .sibscription__guarantee {
-	margin-top: 1rem;
+	margin: 1.25rem 0;
 	color: var(--primary-bright-yellow);
 	font-size: 1.125rem;
 }
