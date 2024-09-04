@@ -117,7 +117,7 @@ body {
 }
 
 section {
-	padding: 2.5rem;
+	padding: 1.85rem;
 }
 
 .subscription__join {
@@ -125,7 +125,7 @@ section {
 }
 
 .sibscription__guarantee {
-	margin: 1.25rem 0;
+	margin: 1rem 0;
 	color: var(--primary-bright-yellow);
 	font-size: 1.125rem;
 }
