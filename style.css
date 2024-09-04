@@ -118,7 +118,7 @@ body {
 }
 
 section {
-	padding: 2.5rem;
+	padding: 2rem;
 }
 
 .subscription__join {
@@ -141,7 +141,7 @@ section {
 .subscription__title {
 	color: white;
 	font-weight: var(--fw-regular);
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 .subscription__package {
@@ -154,7 +154,7 @@ section {
 	display: flex;
 	align-items: flex-end;
 	gap: 1rem;
-	margin-bottom: 1rem;
+	margin-bottom: 0.5rem;
 	color: var(--neutral-light-gray-500);
 }
 
@@ -165,7 +165,7 @@ section {
 }
 
 .subscription__price-description {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .subscription__motivation {
